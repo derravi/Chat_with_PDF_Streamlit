@@ -1,0 +1,4 @@
+# Frontend dependencies for Streamlit UI
+streamlit
+requests
+python-dotenv
