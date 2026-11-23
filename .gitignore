@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# Environment variables & secrets
+.env
+Backend/.env
+
+# Local vector indices
+faiss_index/
+Backend/faiss_index/
