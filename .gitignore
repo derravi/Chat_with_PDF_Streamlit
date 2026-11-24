@@ -1,17 +1,34 @@
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-env/
-venv/
-.venv/
-
-# Environment variables & secrets
+# ── Secrets (NEVER commit these) ─────────────────────────────
 .env
-Backend/.env
+*.env
 
-# Local vector indices
-faiss_index/
+# ── FAISS index (generated locally, no need to commit) ────────
 Backend/faiss_index/
+faiss_index/
+
+# ── Python cache files ─────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# ── Virtual environments ───────────────────────────────────────
+venv/
+env/
+.venv/
+.env/
+
+# ── Streamlit cache ────────────────────────────────────────────
+.streamlit/
+
+# ── OS files ───────────────────────────────────────────────────
+.DS_Store        # macOS
+Thumbs.db        # Windows
+desktop.ini      # Windows
+
+# ── IDE / editor folders ───────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo

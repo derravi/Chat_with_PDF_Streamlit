@@ -1,10 +1,30 @@
-# Backend dependencies for Chat with PDF
-google-generativeai
-langchain
-langchain-community
-langchain-google-genai
-PyPDF2
-faiss-cpu
-chromadb
-python-dotenv
-streamlit
+# ─────────────────────────────────────────────────────────────
+# Backend Requirements for "Chat with PDF"
+# ─────────────────────────────────────────────────────────────
+#
+# Install all dependencies with:
+#   pip install -r requirements.txt
+#
+# ─────────────────────────────────────────────────────────────
+
+# Web Framework
+streamlit              # Turns Python scripts into interactive web apps
+
+# Google AI
+google-generativeai    # Official Google SDK for Gemini API
+langchain-google-genai # LangChain wrapper for Google Gemini (chat + embeddings)
+
+# LangChain Core
+langchain              # Core LangChain library (chains, prompts, etc.)
+langchain-community    # Community extensions (includes FAISS vector store)
+
+# PDF Reading (we support both; install at least one)
+pypdf                  # Preferred: modern, actively maintained PDF reader
+PyPDF2                 # Fallback: older but widely used PDF reader
+
+# Vector Search
+faiss-cpu              # Facebook AI Similarity Search — fast nearest-neighbor search
+                       # Use faiss-gpu instead if you have an NVIDIA GPU
+
+# Environment Variables
+python-dotenv          # Reads .env files into os.environ (keeps secrets out of code)
